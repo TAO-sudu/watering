@@ -108,7 +108,8 @@ static bool adc_calibration_init(adc_unit_t unit, adc_atten_t atten, adc_cali_ha
 
 int have_water(void)
 {
-    if(gpio_get_level(10)==0){
+    if(gpio_get_level(10)==0){
+
         return 1;
     }else{
         return 0;
